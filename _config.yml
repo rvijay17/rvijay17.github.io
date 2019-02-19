@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Talking Aloud"
+title                    : "Thinking Aloud"
 title_separator          : "-"
 name                     : "Vijay Rajagopalan"
 description              : ""
@@ -107,7 +107,7 @@ analytics:
 # Site Author
 author:
   name             : "Vijay Rajagopalan"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/images/bio-photo.jpg"
   bio              : "I design, build and operate data-intensive systems."
   location         : "Sydney, Australia"
   email            :
