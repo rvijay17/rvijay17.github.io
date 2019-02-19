@@ -1,4 +1,13 @@
-
+---
+layout: "post"
+title: "CitiBike Analysis"
+date: "2019-02-19 13:47"
+comments: true
+desc: Analysis of the CitiBike (NYC) data for March 2016
+author: Vijay Rajagopalan
+tags: open-source
+permalink: /citibike-analysis-1/
+---
 
 ```python
 import folium
