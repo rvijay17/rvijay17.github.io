@@ -6,8 +6,11 @@ comments: true
 desc: Analysis of the CitiBike (NYC) data for March 2016
 author: Vijay Rajagopalan
 tags: open-source
-permalink: /citibike-analysis-1/
 ---
+
+CitiBike Analysis Part 1
+
+In this post, I'm just trying the load, cleanse and analyse teh CitiBike data for March 2016. In Part 2, I'll import the weather data and see if that affects the bike usage pattern.
 
 ```python
 import folium
