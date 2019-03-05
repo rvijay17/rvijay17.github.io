@@ -19,10 +19,10 @@ locale                   : "en-US"
 title                    : "Thinking Aloud"
 title_separator          : "-"
 name                     : "Vijay Rajagopalan"
-description              : ""
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+description              : "The ultimate test of your knowledge is your capacity to convey it.   - Richard Feynman"
+url                      : "https://rvijay17.github.io"
+baseurl                  : #"/essays"
+repository               : "rvijay17/rvijay17.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
@@ -159,6 +159,7 @@ footer:
       icon: "fab fa-fw fa-linkedin"
       url: "https://au.linkedin.com/in/rvijay17/"
 
+
 # Reading Files
 include:
   - .htaccess
@@ -200,7 +201,7 @@ markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 markdown: kramdown
 highlighter: rouge
 lsi: false
-excerpt_separator: "\n\n"
+excerpt_separator: "<--more-->" #\n\n"
 incremental: false
 
 
@@ -225,8 +226,8 @@ sass:
 # Outputting
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
-paginate_path: /essays/page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+paginate_path: /page:num/
+timezone: Australia/Sydney
 
 
 # Plugins (previously gems:)
@@ -294,18 +295,8 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: true
+      read_time: false
       comments: # true
       share: true
       related: true
-  # _pages
-  - scope:
-      path: ""
-      type: pages
-    values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments: # true
-      share: true
-      related: true      
+      excerpt_separator: <!--more-->

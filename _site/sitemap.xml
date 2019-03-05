@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+<loc>/whats-jekyll-copy/</loc>
+<lastmod>2013-12-29T00:00:00+11:00</lastmod>
+</url>
+<url>
+<loc>/whats-jekyll-copy-2/</loc>
+<lastmod>2013-12-30T00:00:00+11:00</lastmod>
+</url>
+<url>
+<loc>/whats-jekyll/</loc>
+<lastmod>2013-12-31T00:00:00+11:00</lastmod>
+</url>
+<url>
+<loc>/example-content/</loc>
+<lastmod>2014-01-01T00:00:00+11:00</lastmod>
+</url>
+<url>
+<loc>/introducing-lanyon/</loc>
+<lastmod>2014-01-02T00:00:00+11:00</lastmod>
+</url>
+<url>
+<loc>/CitiBike_Analysis/</loc>
+<lastmod>2019-02-19T13:47:00+11:00</lastmod>
+</url>
+<url>
+<loc>/</loc>
+</url>
+<url>
+<loc>/essays/page2/</loc>
+</url>
+</urlset>

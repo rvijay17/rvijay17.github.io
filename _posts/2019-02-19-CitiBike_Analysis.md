@@ -1,24 +1,22 @@
 ---
-layout: "post"
+layout: "posts"
 title: "CitiBike Analysis"
 date: "2019-02-19 13:47"
 comments: false
 desc: Analysis of the CitiBike (NYC) data for March 2016
 author: Vijay Rajagopalan
 tags: open-source etl
-permalink: /essays/CitiBike_Analysis/
 ---
 
 CitiBike Analysis Part 1
 
 In this post, I'm just trying the load, cleanse and analyse the CitiBike data for March 2016. In Part 2, I'll import the weather data and see if that affects the bike usage pattern.
 
-
 The ETL part of the analysis is in a separate file (CitiBike_ETL.py). It reads all .csv files and converts it into Parquet (or Feather) format. Both parquet and feather are well supported but parquest has wider acceptance at this moment. I also noticed that parquet files compress better with snappy. To know more about Feather, read https://blog.rstudio.org/2016/03/29/feather/
 
-We could also have partioned the parquet files based on the column we'll be joining with other datasets. But for this analysis, I have not partitioned as I'm analysing just a month's data. During analysis, this notebook will be run multiple times and it is efficient to just import the DataFrame
+We could also have partioned the parquet files based on the column we'll be joining with other datasets. But for this analysis, I have not partitioned as I'm analysing just a month's data. During analysis, this notebook will be run multiple times and it is efficient to just import the DataFrame.
 
-<!--break-->
+<!--more-->
 
 ```python
 import folium
@@ -127,7 +125,7 @@ sns.barplot(aggByHour.index, aggByHour.values)
 
 
 
-![png](../images/output_15_1.png)
+![png](/images/output_15_1.png)
 
 
 #### Which Start and End stations are the busiest?
@@ -151,7 +149,7 @@ g2 = sns.barplot(aggByEndSt.index, aggByEndSt.values, ax=axes[1])\
 ```
 
 
-![png](../images/output_18_0.png)
+![png](/images/output_18_0.png)
 
 
 
