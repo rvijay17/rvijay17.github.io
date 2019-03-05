@@ -18,7 +18,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Thinking Aloud">
 <meta property="og:title" content="CitiBike Analysis">
-<meta property="og:url" content="/CitiBike_Analysis/">
+<meta property="og:url" content="https://rvijay17.github.io/CitiBike_Analysis/">
 
 
   <meta property="og:description" content="CitiBike Analysis Part 1In this post, I’m just trying the load, cleanse and analyse the CitiBike data for March 2016. In Part 2, I’ll import the weather data and see if that affects the bike usage pattern.The ETL part of the analysis is in a separate file (CitiBike_ETL.py). It reads all .csv files and converts it into Parquet (or Feather) format. Both parquet and feather are well supported but parquest has wider acceptance at this moment. I also noticed that parquet files compress better with snappy. To know more about Feather, read https://blog.rstudio.org/2016/03/29/feather/We could also have partioned the parquet files based on the column we’ll be joining with other datasets. But for this analysis, I have not partitioned as I’m analysing just a month’s data. During analysis, this notebook will be run multiple times and it is efficient to just import the DataFrame.">
@@ -40,7 +40,7 @@
   
 
 
-<link rel="canonical" href="/CitiBike_Analysis/">
+<link rel="canonical" href="https://rvijay17.github.io/CitiBike_Analysis/">
 
 
 
@@ -53,7 +53,7 @@
       "@context": "https://schema.org",
       "@type": "Person",
       "name": "Vijay Rajagopalan",
-      "url": null,
+      "url": "https://rvijay17.github.io",
       "sameAs": null
     }
   </script>
@@ -118,9 +118,7 @@
       <nav id="site-nav" class="greedy-nav">
         
         <a class="site-title" href="/">Thinking Aloud</a>
-        <ul class="visible-links"><li class="masthead__menu-item">
-              <a href="/essays/" >Essays</a>
-            </li></ul>
+        <ul class="visible-links"></ul>
         
         <button class="greedy-nav__toggle hidden" type="button">
           <span class="visually-hidden">Toggle menu</span>
@@ -468,18 +466,6 @@ Getting all data for mornings (before 10 am) and evenings (after 4 pm)</p>
       </a>
     </li>
   
-    <li>
-      <a href="#2014">
-        <strong>2014</strong> <span class="taxonomy__count">2</span>
-      </a>
-    </li>
-  
-    <li>
-      <a href="#2013">
-        <strong>2013</strong> <span class="taxonomy__count">3</span>
-      </a>
-    </li>
-  
 </ul>
 
 
@@ -508,142 +494,6 @@ Getting all data for mornings (before 10 am) and evenings (after 4 pm)</p>
 <p>In this post, I’m just trying the load, cleanse and analyse the CitiBike data for March 2016. In Part 2, I’ll import the weather data and see if that affects the bike usage pattern.</p>
 
 <p>The ETL part of the analysis is in a separate file (CitiBike_ETL.py). It reads all .csv files and converts it into Parquet (or Feather) format. Both parquet and feather are well supported but parquest has wider acceptance at this moment. I also noticed that parquet files...</p>
-  </article>
-</div>
-
-      
-    </div>
-    <a href="#page-title" class="back-to-top">Back to top &uarr;</a>
-  </section>
-
-  <section id="2014" class="taxonomy__section">
-    <h2 class="archive__subtitle">2014</h2>
-    <div class="entries-list">
-      
-        
-
-
-
-<div class="list__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="/introducing-lanyon/" rel="permalink">Introducing Lanyon
-</a>
-      
-    </h2>
-    
-    <!-- Removed | strip_html  by Vijay -->
-    <p class="archive__item-excerpt" itemprop="description"><p>Lanyon is an unassuming <a href="http://jekyllrb.com">Jekyll</a> theme that places content first by tucking away navigation in a hidden drawer. It’s based on <a href="http://getpoole.com">Poole</a>, the Jekyll butler.</p>
-
-<h3 id="built-on-poole">Built on Poole</h3>
-
-<p>Poole is the Jekyll Butler, serving as an upstanding and effective foundation for Jekyll themes by <a href="https://twitter.com/mdo">@mdo</a>. Poole, and every theme built on it (like Lanyon here) includes the following:</p...</p>
-  </article>
-</div>
-
-      
-        
-
-
-
-<div class="list__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="/example-content/" rel="permalink">Example content
-</a>
-      
-    </h2>
-    
-    <!-- Removed | strip_html  by Vijay -->
-    <p class="archive__item-excerpt" itemprop="description"><div class="message">
-  Howdy! This is an example blog post that shows several types of HTML content supported in this theme.
-</div>
-
-<p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. <em>Aenean eu leo quam.</em> Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
-
-<blockquote>
-  <p>Curabitur blandit tempus porttitor. Nullam quis risus eg...</p>
-  </article>
-</div>
-
-      
-    </div>
-    <a href="#page-title" class="back-to-top">Back to top &uarr;</a>
-  </section>
-
-  <section id="2013" class="taxonomy__section">
-    <h2 class="archive__subtitle">2013</h2>
-    <div class="entries-list">
-      
-        
-
-
-
-<div class="list__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="/whats-jekyll/" rel="permalink">What’s Jekyll?
-</a>
-      
-    </h2>
-    
-    <!-- Removed | strip_html  by Vijay -->
-    <p class="archive__item-excerpt" itemprop="description"><p><a href="http://jekyllrb.com">Jekyll</a> is a static site generator, an open-source tool for creating simple yet powerful websites of all shapes and sizes. From <a href="https://github.com/mojombo/jekyll/blob/master/README.markdown">the project’s readme</a>:</p>
-
-<blockquote>
-  <p>Jekyll is a simple, blog aware, static site generator. It takes a template directory […] and spits out a complete, static website suitable for serving with Apache or your favorite web server. This is also the eng...</p>
-  </article>
-</div>
-
-      
-        
-
-
-
-<div class="list__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="/whats-jekyll-copy-2/" rel="permalink">What’s Jekyll?
-</a>
-      
-    </h2>
-    
-    <!-- Removed | strip_html  by Vijay -->
-    <p class="archive__item-excerpt" itemprop="description"><p><a href="http://jekyllrb.com">Jekyll</a> is a static site generator, an open-source tool for creating simple yet powerful websites of all shapes and sizes. From <a href="https://github.com/mojombo/jekyll/blob/master/README.markdown">the project’s readme</a>:</p>
-
-<blockquote>
-  <p>Jekyll is a simple, blog aware, static site generator. It takes a template directory […] and spits out a complete, static website suitable for serving with Apache or your favorite web server. This is also the eng...</p>
-  </article>
-</div>
-
-      
-        
-
-
-
-<div class="list__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="/whats-jekyll-copy/" rel="permalink">What’s Jekyll?
-</a>
-      
-    </h2>
-    
-    <!-- Removed | strip_html  by Vijay -->
-    <p class="archive__item-excerpt" itemprop="description"><p><a href="http://jekyllrb.com">Jekyll</a> is a static site generator, an open-source tool for creating simple yet powerful websites of all shapes and sizes. From <a href="https://github.com/mojombo/jekyll/blob/master/README.markdown">the project’s readme</a>:</p>
-
-<blockquote>
-  <p>Jekyll is a simple, blog aware, static site generator. It takes a template directory […] and spits out a complete, static website suitable for serving with Apache or your favorite web server. This is also the eng...</p>
   </article>
 </div>
 
