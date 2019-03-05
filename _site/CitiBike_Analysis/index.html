@@ -18,7 +18,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Thinking Aloud">
 <meta property="og:title" content="CitiBike Analysis">
-<meta property="og:url" content="https://rvijay17.github.io/CitiBike_Analysis/">
+<meta property="og:url" content="/CitiBike_Analysis/">
 
 
   <meta property="og:description" content="CitiBike Analysis Part 1In this post, I’m just trying the load, cleanse and analyse the CitiBike data for March 2016. In Part 2, I’ll import the weather data and see if that affects the bike usage pattern.The ETL part of the analysis is in a separate file (CitiBike_ETL.py). It reads all .csv files and converts it into Parquet (or Feather) format. Both parquet and feather are well supported but parquest has wider acceptance at this moment. I also noticed that parquet files compress better with snappy. To know more about Feather, read https://blog.rstudio.org/2016/03/29/feather/We could also have partioned the parquet files based on the column we’ll be joining with other datasets. But for this analysis, I have not partitioned as I’m analysing just a month’s data. During analysis, this notebook will be run multiple times and it is efficient to just import the DataFrame.">
@@ -40,7 +40,7 @@
   
 
 
-<link rel="canonical" href="https://rvijay17.github.io/CitiBike_Analysis/">
+<link rel="canonical" href="/CitiBike_Analysis/">
 
 
 
@@ -53,7 +53,7 @@
       "@context": "https://schema.org",
       "@type": "Person",
       "name": "Vijay Rajagopalan",
-      "url": "https://rvijay17.github.io",
+      "url": null,
       "sameAs": null
     }
   </script>
@@ -118,7 +118,9 @@
       <nav id="site-nav" class="greedy-nav">
         
         <a class="site-title" href="/">Thinking Aloud</a>
-        <ul class="visible-links"></ul>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/essays/" >Essays</a>
+            </li></ul>
         
         <button class="greedy-nav__toggle hidden" type="button">
           <span class="visually-hidden">Toggle menu</span>
